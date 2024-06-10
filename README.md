@@ -26,7 +26,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
    ```bash
    npm install express mysql body-parser
 
-3. **Estructura del Proyecto:**
+3. ## **Estructura del Proyecto:**
 
 
   restaurant-orders/
@@ -39,7 +39,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   ├── app.js
   └── package.json
 
-4. **Configuracion de la Base de Datos:** 
+4. ## **Configuracion de la Base de Datos:** 
 A.Inicia tu servidor MySql y crea la base de datos con el siguiente código:
 ```bash
 
@@ -76,7 +76,7 @@ B.Configura la conexión a la base de datos con el siguiente codigo que se encue
   module.exports = connection;
 ```
 
-  5. **Ejecutar el Proyecto:**
+  5. ## **Ejecutar el Proyecto:**
   A.Abre la terminal del Visual Studio o coloca el siguiente comando:
 ```bash
   node app.js
