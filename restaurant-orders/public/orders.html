@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos del Restaurante</title>
+    <link rel="stylesheet" href="/css/orders.css">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+<link href='https://fonts.googleapis.com/css2?family=Paytone+One&display=swap' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Crear Pedido</a>
+        <a href="orders.html">Ver Pedidos</a>
+    </nav>
+
+    <h1>Pedidos del Restaurante</h1>
+    <div class="table-container">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Número de Mesa</th>
+                <th>Artículos</th>
+                <th>Subtotal</th>
+                <th>Total</th>
+                <th>Fecha de Creación</th>
+            </tr>
+        </thead>
+        <tbody id="ordersTableBody">
+            <!-- Orders will be inserted here -->
+        </tbody>
+    </table>
+    </div>
+
+    <script>
+        async function fetchOrders() {
+            try {
+                const response = await fetch('/orders/all');
+                const orders = await response.json();
+                const tableBody = document.getElementById('ordersTableBody');
+
+                orders.forEach(order => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${order.id}</td>
+                        <td>${order.table_number}</td>
+                        <td>${order.items}</td>
+                        <td>${order.subtotal}</td>
+                        <td>${order.total}</td>
+                        <td>${order.created_at}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error fetching orders:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchOrders);
+    </script>
+</body>
+
+</html>
