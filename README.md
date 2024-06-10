@@ -10,7 +10,6 @@ Este proyecto es un sistema de pedidos para un restaurante desarrollado utilizan
 - [Ejecutar el Proyecto](#ejecutar-el-proyecto)
 - [Uso del API](#uso-del-api)
 - [Capturas de Pantalla](#capturas-de-pantalla)
-- [Documentación del Código](#documentación-del-código)
 
 ## Instalación
 
@@ -30,13 +29,21 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
 
 
   restaurant-orders/
+  
   ├── db/
+  
   │   └── connection.js
+  
   ├── models/
+  
   │   └── order.js
+  
   ├── routes/
+  
   │   └── orders.js
+  
   ├── app.js
+  
   └── package.json
 
 4. ## Configuracion de la Base de Datos:
@@ -85,7 +92,56 @@ B.Configura la conexión a la base de datos con el siguiente codigo que se encue
   ```bash
 http://localhost:3000/
 ```
-  6. Uso del Postman
+  6. ##Uso del Postman (API):
+A.Descargar Postman de su página oficial:
+   https://www.postman.com/downloads/
+   ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/9d35233a-3dca-4c97-b8b5-6a26a3f64fa5)
+
+B.Instalar y abrir la aplicación.
+
+   ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/b5546cdd-ffac-4cb7-a9a1-2928e9815816)
+
+C.Damos click en Workspaces, cremos un workspaces en blanco.
+   ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/1cda2506-48e6-4b6a-8fa6-48d00040b3e0)
+
+D.Donde dice GET lo cambiamos para que sea POST y ponemos la URL local donde se encuentra nuestra base de datos.
+```bash
+   http://localhost:3000/orders/new
+```
+   ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/905306d2-95a5-4616-b1e0-63a1c26b51b4)
+
+E.Vamos a Headers y rellenamos con los siguientes datos:
+   ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/77eacfeb-dc0f-41c5-ac81-4d1791398a2e)
+
+F.Y finalmente vamos a Body y colocamos el siguiente codigo ,para verificar que podemos introducir datos en nuestra base de datos y click en SEND:
+```bash
+{
+ "tableNumber": 5,
+ "items": [
+ {"name": "Pizza", "price": 10.00, "quantity": 2},
+ {"name": "Soda", "price": 2.50, "quantity": 3}
+ ]
+}
+```
+![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/91ce57a3-0af9-49fe-bb7c-598133834d75)
+
+6.## Capturas de la interfaz de Usuario:
+A.Crear pedido.
+   ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/63fff658-9c04-4ba6-9009-3c12f82e7a39)
+B.Ver pedidos.
+   ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/2464bc22-bc49-40ff-bfd9-dcee43b05d3d)
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
