@@ -6,10 +6,10 @@ Este proyecto es un sistema de pedidos para un restaurante desarrollado utilizan
 
 - [Instalación](#instalación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Configuración de la Base de Datos](#configuración-de-la-base-de-datos)
+- [Configuracion de la Base de Datos](#configuración-de-la-base-de-datos)
 - [Ejecutar el Proyecto](#ejecutar-el-proyecto)
-- [Uso del API](#uso-del-api)
-- [Capturas de Pantalla](#capturas-de-pantalla)
+- [Uso del Postman (API)](#uso-del-api)
+- [Capturas de la interfaz de Usuario](#capturas-de-pantalla)
 
 ## Instalación
 
@@ -25,7 +25,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
    ```bash
    npm install express mysql body-parser
 
-## Estructura del Proyecto:
+## Estructura del Proyecto
 
 
   restaurant-orders/
@@ -46,7 +46,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   
   └── package.json
 
-## Configuracion de la Base de Datos:
+## Configuracion de la Base de Datos
 1.Inicia tu servidor MySql y crea la base de datos con el siguiente código:
 ```bash
 
@@ -83,7 +83,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   module.exports = connection;
 ```
 
-## Ejecutar el Proyecto:
+## Ejecutar el Proyecto
   1.Abre la terminal del Visual Studio o coloca el siguiente comando:
 ```bash
   node app.js
@@ -92,7 +92,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   ```bash
 http://localhost:3000/
 ```
-## Uso del Postman (API):
+## Uso del Postman (API)
 1.Descargar Postman de su página oficial:
    https://www.postman.com/downloads/
    ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/9d35233a-3dca-4c97-b8b5-6a26a3f64fa5)
@@ -125,7 +125,7 @@ http://localhost:3000/
 ```
 ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/91ce57a3-0af9-49fe-bb7c-598133834d75)
 
-## Capturas de la interfaz de Usuario:
+## Capturas de la interfaz de Usuario
 1.Crear pedido.
    ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/63fff658-9c04-4ba6-9009-3c12f82e7a39)
 2.Ver pedidos.
