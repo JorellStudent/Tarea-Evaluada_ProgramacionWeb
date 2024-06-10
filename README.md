@@ -45,8 +45,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   ├── app.js
   
   └── package.json
-
-## Configuracion de la Base de Datos
+## Configuración de la Base de Datos
 
 1.Inicia tu servidor MySql y crea la base de datos con el siguiente código:
 ```bash
