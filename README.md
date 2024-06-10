@@ -1,8 +1,8 @@
-Sistema de Pedidos para un Restaurante
+# Sistema de Pedidos para un Restaurante
 
 Este proyecto es un sistema de pedidos para un restaurante desarrollado utilizando Node.js, Express.js y MySQL. El sistema permite ingresar los pedidos de los clientes, calcular el subtotal y el total (incluyendo una propina del 10%), y registrar el número de mesa.
 
-Contenidos
+## Contenidos
 
 - [Instalación](#instalación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
@@ -12,19 +12,20 @@ Contenidos
 - [Capturas de Pantalla](#capturas-de-pantalla)
 - [Documentación del Código](#documentación-del-código)
 
-- [Instalación](#instalación)
+## Instalación
 
 Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
 
-1. Clona el repositorio:
+1. **Clona el repositorio:**
    ```bash
-  git clone <URL del repositorio>
-  cd restaurant-orders
+   git clone <URL del repositorio>
+   cd restaurant-orders
+
   
-2.Instala las dependencias necesarias:
+2. **Instala las dependencias necesarias:**
   npm install express mysql body-parser
 
-3.Estructura del Proyecto:
+3. **Estructura del Proyecto:**
 
   restaurant-orders/
   ├── db/
@@ -36,7 +37,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   ├── app.js
   └── package.json
 
-4.Configuracion de la Base de Datos: 
+4. **Configuracion de la Base de Datos:** 
 A.Inicia tu servidor MySql y crea la base de datos con el siguiente código:
 
   CREATE DATABASE restaurant;
@@ -70,14 +71,14 @@ B.Configura la conexión a la base de datos con el siguiente codigo que se encue
   
   module.exports = connection;
 
-  5.Ejecutar el Proyecto:
+  5. **Ejecutar el Proyecto:**
   A.Abre la terminal del Visual Studio o coloca el siguiente comando:
 
   node app.js
 
   B.Para acceder a la página web ingresa a http://localhost:3000/
 
-  6.Uso del Postman
+  6. **Uso del Postman**
   
 
 
