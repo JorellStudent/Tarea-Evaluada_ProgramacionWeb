@@ -92,7 +92,7 @@ B.Configura la conexión a la base de datos con el siguiente codigo que se encue
   ```bash
 http://localhost:3000/
 ```
-  6. ##Uso del Postman (API):
+  6. ## Uso del Postman (API):
 A.Descargar Postman de su página oficial:
    https://www.postman.com/downloads/
    ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/9d35233a-3dca-4c97-b8b5-6a26a3f64fa5)
@@ -125,7 +125,7 @@ F.Y finalmente vamos a Body y colocamos el siguiente codigo ,para verificar que 
 ```
 ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/91ce57a3-0af9-49fe-bb7c-598133834d75)
 
-6.## Capturas de la interfaz de Usuario:
+6. ## Capturas de la interfaz de Usuario:
 A.Crear pedido.
    ![image](https://github.com/JorellStudent/restaurant-orders/assets/167504858/63fff658-9c04-4ba6-9009-3c12f82e7a39)
 B.Ver pedidos.
