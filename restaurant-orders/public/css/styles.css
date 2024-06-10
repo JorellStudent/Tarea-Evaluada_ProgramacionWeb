@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9f900;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+html {
+    --s: 34px; /* control the size*/
+    --c1: #ecbe13;
+    --c2: #309292;
+    
+    --_g: radial-gradient(calc(var(--s)/2),var(--c1) 97%,#0000);
+    background:
+      var(--_g),var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+      repeating-conic-gradient(from 45deg,#0000 0 25%,var(--c2) 0 50%) calc(-.707*var(--s)) calc(-.707*var(--s)),
+      repeating-linear-gradient(135deg,var(--c1) calc(var(--s)/-2) calc(var(--s)/2),var(--c2) 0 calc(2.328*var(--s)));
+    background-size: calc(4*var(--s)) calc(4*var(--s));
+  }
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+svg {
+	font-family: "Rampart One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 9s infinite alternate;
+	stroke-width: 2;
+	stroke: #FFFFFF;
+	font-size: 50px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); }
+	80%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background:
+    var(--_g),var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+    repeating-conic-gradient(from 45deg,#0000 0 25%,var(--c2) 0 50%) calc(-.707*var(--s)) calc(-.707*var(--s)),
+    repeating-linear-gradient(135deg,var(--c1) calc(var(--s)/-2) calc(var(--s)/2),var(--c2) 0 calc(2.328*var(--s)));
+  background-size: calc(4*var(--s)) calc(4*var(--s));};

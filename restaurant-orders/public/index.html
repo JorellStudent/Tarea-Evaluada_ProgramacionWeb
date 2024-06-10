@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos del Restaurante</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<div class="wrapper">
+	<svg>
+		<text x="50%" y="75%" dy=".35em" text-anchor="middle">
+			Sistema de Pedidos para un Restaurante
+		</text>
+	</svg>
+</div>
+
+<body>
+    <div class="container">
+        <h1>Ingresar Pedido</h1>
+        <form id="orderForm">
+            <label for="tableNumber">Número de Mesa:</label>
+            <input type="number" id="tableNumber" name="tableNumber" required>
+
+            <label for="item1">Item 1:</label>
+            <input type="text" id="item1Name" placeholder="Nombre del item">
+            <input type="number" id="item1Price" placeholder="Precio">
+            <input type="number" id="item1Quantity" placeholder="Cantidad">
+
+            <label for="item2">Item 2:</label>
+            <input type="text" id="item2Name" placeholder="Nombre del item">
+            <input type="number" id="item2Price" placeholder="Precio">
+            <input type="number" id="item2Quantity" placeholder="Cantidad">
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+        <p id="response"></p>
+    </div>
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const tableNumber = document.getElementById('tableNumber').value;
+            const items = [
+                {
+                    name: document.getElementById('item1Name').value,
+                    price: parseFloat(document.getElementById('item1Price').value),
+                    quantity: parseInt(document.getElementById('item1Quantity').value)
+                },
+                {
+                    name: document.getElementById('item2Name').value,
+                    price: parseFloat(document.getElementById('item2Price').value),
+                    quantity: parseInt(document.getElementById('item2Quantity').value)
+                }
+            ];
+            fetch('/orders/new', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ tableNumber, items })
+            })
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('response').textContent = data;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</body>
+
+</html>
