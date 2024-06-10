@@ -84,7 +84,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   module.exports = connection;
 ```
 
-## Ejecutar el Proyecto
+##Ejecutar el Proyecto
 
   1.Abre la terminal del Visual Studio o coloca el siguiente comando:
 ```bash
