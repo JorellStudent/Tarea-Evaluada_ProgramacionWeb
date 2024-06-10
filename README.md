@@ -12,7 +12,7 @@ Contenidos
 - [Capturas de Pantalla](#capturas-de-pantalla)
 - [Documentación del Código](#documentación-del-código)
 
-Instalación
+[Instalación]
 
 Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
 
