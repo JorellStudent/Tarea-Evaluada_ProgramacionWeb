@@ -6,10 +6,10 @@ Este proyecto es un sistema de pedidos para un restaurante desarrollado utilizan
 
 - [Instalación](#instalación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Configuracion de la Base de Datos](#configuración-de-la-base-de-datos)
+- [Configuración de la Base de Datos](#configuración-de-la-base-de-datos)
 - [Ejecutar el Proyecto](#ejecutar-el-proyecto)
-- [Uso del Postman (API)](#uso-del-api)
-- [Capturas de la interfaz de Usuario](#capturas-de-pantalla)
+- [Uso del Postman (API)](#uso-del-postman-api)
+- [Capturas de la Interfaz de Usuario](#capturas-de-la-interfaz-de-usuario)
 
 ## Instalación
 
@@ -84,7 +84,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
   module.exports = connection;
 ```
 
-##Ejecutar el Proyecto
+## Ejecutar el Proyecto
 
   1.Abre la terminal del Visual Studio o coloca el siguiente comando:
 ```bash
