@@ -23,7 +23,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
 
   
 2. **Instala las dependencias necesarias:**
-  npm install express mysql body-parser
+   npm install express mysql body-parser
 
 3. **Estructura del Proyecto:**
 
