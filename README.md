@@ -23,9 +23,11 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
 
   
 2. **Instala las dependencias necesarias:**
+   ```bash
    npm install express mysql body-parser
 
 3. **Estructura del Proyecto:**
+
 
   restaurant-orders/
   ├── db/
@@ -39,6 +41,7 @@ Para instalar y ejecutar este proyecto, sigue los siguientes pasos:
 
 4. **Configuracion de la Base de Datos:** 
 A.Inicia tu servidor MySql y crea la base de datos con el siguiente código:
+```bash
 
   CREATE DATABASE restaurant;
   USE restaurant;
@@ -50,9 +53,10 @@ A.Inicia tu servidor MySql y crea la base de datos con el siguiente código:
       total DECIMAL(10, 2) NOT NULL,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   );
+```
 
 B.Configura la conexión a la base de datos con el siguiente codigo que se encuentra en el archivo "db/connection.js":
-
+```bash
   const mysql = require('mysql');
   const connection = mysql.createConnection({
       host: 'localhost',
@@ -70,14 +74,17 @@ B.Configura la conexión a la base de datos con el siguiente codigo que se encue
   });
   
   module.exports = connection;
+```
 
   5. **Ejecutar el Proyecto:**
   A.Abre la terminal del Visual Studio o coloca el siguiente comando:
-
+```bash
   node app.js
-
-  B.Para acceder a la página web ingresa a http://localhost:3000/
-
+```
+  B.Para acceder a la página web ingresa a:
+  ```bash
+http://localhost:3000/
+```
   6. **Uso del Postman**
   
 
